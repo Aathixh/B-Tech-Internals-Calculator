@@ -87,21 +87,21 @@ body {
 }
 
 .bg-primary {
-  background-color: #ff8f49e0;
+  background-color: #d47c46e0;
 }
 
 .bg-teal {
-  background-color: #e7d4b5;
+  background-color: #c9955b;
 }
 
 .bg-purple {
-  background-color: #e7d4b5;
+  background-color: #cc8253e0;
 }
 
 h1 {
   text-align: center;
   margin-top: 5%;
-  color: #d17842;
+  color: #c77e4ee0;
   font-size: 350%;
   font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
