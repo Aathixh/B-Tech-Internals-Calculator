@@ -1,0 +1,33 @@
+            Internals (50)
+                |
+                |
+               / \
+              /   \
+             /     \
+            /       \
+           /         \
+          /           \
+          |            |
+      CAT 1 (12.5)  Attendance (10)
+      CAT 2 (12.5)  Assignment (15)
+
+if ( attendance<75) {
+   not required attendance 
+}
+
+else if( 75<=attendance<80)
+{
+  attendanceMark=8
+}
+
+else if( 80<=attendance<90)
+{
+  attendanceMark=9
+}
+
+else if( 90<=attendance)
+{
+  attendanceMark=10
+}
+  
+ Internals= (cat1 /4)+(cat2 /4)+attendanceMark+((assignmnet1+assignmnet2)/3.3333)

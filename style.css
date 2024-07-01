@@ -178,9 +178,9 @@ section {
   border: none;
   justify-content: center;
   fill: #fff;
-  color: #fff;
+  color: #6e3814;
   border: 2px solid transparent;
-  background: #d17842;
+  background: #c77e4ed5;
   transition: all 200ms;
 }
 .form .checkout-btn:active {
@@ -188,8 +188,8 @@ section {
 }
 
 .form .checkout-btn:hover {
-  color: #d17842;
-  border: 2px solid #d17842;
+  color: #5c2611;
+  border: 2px solid #9e4b2a;
   background: transparent;
   #cat1 {
     width: 190px;
