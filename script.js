@@ -27,6 +27,7 @@ submit.addEventListener("click", function () {
         (assignment1 + assignment2) / 6.666
     );
 
+    document.getElementById("internals-value").textContent = Internals;
     console.log(Internals);
     console.log("Button clicked");
   } else {
