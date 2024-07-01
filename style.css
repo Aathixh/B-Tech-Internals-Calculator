@@ -164,7 +164,7 @@ section {
   border-color: #d17842;
 }
 
-.form .checkout-btn {
+.form .submit-btn {
   margin-top: 20px;
   padding: 20px 0;
   border-radius: 25px;
@@ -183,13 +183,13 @@ section {
   background: #c77e4ed5;
   transition: all 200ms;
 }
-.form .checkout-btn:active {
+.form .submit-btn:active {
   scale: 0.95;
 }
 
-.form .checkout-btn:hover {
-  color: #5c2611;
-  border: 2px solid #9e4b2a;
+.form .submit-btn:hover {
+  color: #d17842;
+  border: 2px solid #d17842;
   background: transparent;
   #cat1 {
     width: 190px;
