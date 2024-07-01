@@ -98,6 +98,14 @@ body {
   background-color: #e0a558ec;
 }
 
+#heading {
+  text-align: center;
+  padding-top: 3%;
+  color: #be1d1d;
+  font-size: 250%;
+  font-weight: 1000;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -166,7 +174,6 @@ section {
 
 .form .input-field:focus {
   border-color: #d17842;
-  text-transform: uppercase;
   color: #6e3814c7;
 }
 
