@@ -195,3 +195,17 @@ section {
     width: 190px;
   }
 }
+
+.internals-section {
+  width: 300px;
+  border-radius: 25px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
