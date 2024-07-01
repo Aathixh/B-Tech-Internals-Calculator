@@ -115,7 +115,8 @@ section {
   flex-direction: column;
   gap: 15px;
   padding: 20px;
-  position: relative;
+  z-index: 0;
+  /* position: absolute; */
   border-radius: 25px;
 }
 .form .label {
@@ -213,9 +214,8 @@ section {
   align-items: center;
   gap: 15px;
   padding: 20px;
-  position: relative;
+  /* position: absolute; */
   border-radius: 25px;
-  z-index: -1;
 }
 .internals-result p {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -226,6 +226,8 @@ section {
 
 .hidden {
   display: none;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 @keyframes slideOut {
@@ -239,7 +241,7 @@ section {
 
 @keyframes slideIn {
   from {
-    transform: translateX(0);
+    transform: translateX(100);
   }
   to {
     transform: translateX(50%);

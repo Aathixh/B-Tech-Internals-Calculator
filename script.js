@@ -4,11 +4,13 @@ let attendenceMarks;
 const submit = document.querySelector(".submit-btn");
 
 submit.addEventListener("click", function () {
-  const cat1 = parseFloat(document.getElementById("Cat1Marks").value);
-  const cat2 = parseFloat(document.getElementById("Cat2Marks").value);
+  const cat1 = parseFloat(document.getElementById("Cat1Marks").value) || 0;
+  const cat2 = parseFloat(document.getElementById("Cat2Marks").value) || 0;
   const attendence = parseFloat(document.getElementById("Attendence").value);
-  const assignment1 = parseFloat(document.getElementById("Assignment1").value);
-  const assignment2 = parseFloat(document.getElementById("Assignment2").value);
+  const assignment1 =
+    parseFloat(document.getElementById("Assignment1").value) || 0;
+  const assignment2 =
+    parseFloat(document.getElementById("Assignment2").value) || 0;
 
   if (attendence >= 75 && attendence <= 100) {
     //Attendence Marks
@@ -28,16 +30,18 @@ submit.addEventListener("click", function () {
     );
 
     document.querySelector(".internals-result").classList.remove("hidden");
-    document.querySelector(".add-card").style.zIndex = 1;
-    // document.querySelector(".add-card").style.position = "relative";
-    document.querySelector(".internals-result").style.zIndex = 0;
-    document.querySelector(".internals-result").style.position = "relative";
     document.getElementById("internals-value").textContent = Internals;
     document.querySelector(".internals-result").classList.add("slide-in");
-    document.querySelector(".add-card").classList.add("slide-out");
+    document.querySelector(".form").classList.add("slide-out");
 
     console.log(Internals);
     console.log("Button clicked");
   } else {
+    document.getElementById("internals-value").classList.add("hidden");
+    document.querySelector(".internals-result").classList.remove("hidden");
+    document.querySelector(".internal-heading").textContent =
+      "You need Minimum of 75% Attendence";
+    document.querySelector(".internals-result").classList.add("slide-in");
+    document.querySelector(".add-card").classList.add("slide-out");
   }
 });
