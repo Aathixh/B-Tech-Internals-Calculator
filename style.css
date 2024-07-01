@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
   justify-content: center;
   box-sizing: border-box;
@@ -202,4 +203,8 @@ section {
   color: #d17842;
   border: 2px solid #d17842;
   background: transparent;
+=======
+#cat1 {
+  width: 190px;
+>>>>>>> Stashed changes
 }
