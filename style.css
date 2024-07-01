@@ -87,23 +87,23 @@ body {
 }
 
 .bg-primary {
-  background-color: #da8a6d;
+  background-color: #ff8f49e0;
 }
 
 .bg-teal {
-  background-color: #c77e4e;
+  background-color: #e7d4b5;
 }
 
 .bg-purple {
-  background-color: #e0a558ec;
+  background-color: #e7d4b5;
 }
 
-#heading {
+h1 {
   text-align: center;
-  padding-top: 3%;
-  color: #be1d1d;
+  margin: 0;
+  padding-top: 18px;
+  color: #d17842;
   font-size: 250%;
-  font-weight: 1000;
 }
 
 section {
@@ -225,10 +225,10 @@ section {
   border-radius: 25px;
 }
 .internals-result p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: -apple-system-headline, BlinkMacSystemFont, sans-serif;
   font-size: 250%;
   font-weight: bolder;
-  color: #b66229de;
+  color: #d17842;
 }
 
 .hidden {
@@ -248,7 +248,7 @@ section {
 
 @keyframes slideIn {
   from {
-    transform: translateX(100);
+    transform: translateX(0);
   }
   to {
     transform: translateX(50%);
