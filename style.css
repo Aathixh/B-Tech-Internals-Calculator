@@ -215,6 +215,7 @@ section {
   padding: 20px;
   position: relative;
   border-radius: 25px;
+  z-index: -1;
 }
 .internals-result p {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -225,4 +226,30 @@ section {
 
 .hidden {
   display: none;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.slide-out {
+  animation: slideOut 1.5s forwards;
+}
+
+.slide-in {
+  animation: slideIn 1.5s forwards;
 }

@@ -27,7 +27,15 @@ submit.addEventListener("click", function () {
         (assignment1 + assignment2) / 6.666
     );
 
+    document.querySelector(".internals-result").classList.remove("hidden");
+    document.querySelector(".add-card").style.zIndex = 1;
+    // document.querySelector(".add-card").style.position = "relative";
+    document.querySelector(".internals-result").style.zIndex = 0;
+    document.querySelector(".internals-result").style.position = "relative";
     document.getElementById("internals-value").textContent = Internals;
+    document.querySelector(".internals-result").classList.add("slide-in");
+    document.querySelector(".add-card").classList.add("slide-out");
+
     console.log(Internals);
     console.log("Button clicked");
   } else {
