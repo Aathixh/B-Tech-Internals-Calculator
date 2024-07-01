@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
   justify-content: center;
   box-sizing: border-box;
@@ -79,23 +80,23 @@ body {
 }
 
 .opacity-50 {
-  opacity: 0.5;
+  opacity: 5;
 }
 
 .bg-blur {
-  filter: blur(90px);
+  filter: blur(100px);
 }
 
 .bg-primary {
-  background-color: rgb(227, 139, 95);
+  background-color: #c98e71;
 }
 
 .bg-teal {
-  background-color: rgb(178, 105, 242);
+  background-color: #d8a2a5;
 }
 
 .bg-purple {
-  background-color: rgb(61, 219, 236);
+  background-color: #d38ea2;
 }
 
 section {
@@ -202,4 +203,8 @@ section {
   color: #d17842;
   border: 2px solid #d17842;
   background: transparent;
+=======
+#cat1 {
+  width: 190px;
+>>>>>>> Stashed changes
 }
