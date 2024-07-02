@@ -126,7 +126,6 @@ section {
   gap: 15px;
   padding: 20px;
   z-index: 0;
-  /* position: absolute; */
   border-radius: 25px;
 }
 .form .label {
@@ -359,4 +358,55 @@ section {
 
 th {
   padding-left: 30px;
+}
+
+@media (max-width: 800px) {
+  .modal {
+    width: 60%;
+    padding: 3rem;
+  }
+  section {
+    width: fit-content;
+  }
+  section .form {
+    transform: scale(0.9) !important;
+  }
+  h1 {
+    font-size: 250%;
+    margin: 0;
+  }
+  .show-modal {
+    left: 1.5%;
+    top: 1.5%;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+  }
+
+  .absolute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .slide-in,
+  .slide-out {
+    animation: none !important; /* Overrides any animation */
+    transform: none !important; /* Resets any transform applied by the animation */
+  }
+
+  .internals-result {
+    margin-top: 5%;
+    z-index: 0;
+    margin-bottom: 5%;
+    font-size: 100%;
+  }
+
+  .internals-result p {
+    margin: 0;
+  }
 }

@@ -29,6 +29,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 //
+const section1 = document.querySelector(".form");
+const section2 = document.querySelector(".internals-result");
 
 submit.addEventListener("click", function () {
   const cat1 = parseFloat(document.getElementById("Cat1Marks").value) || 0;
@@ -39,8 +41,6 @@ submit.addEventListener("click", function () {
     parseFloat(document.getElementById("Assignment1").value) || 0;
   const assignment2 =
     parseFloat(document.getElementById("Assignment2").value) || 0;
-  const section1 = document.querySelector(".form");
-  const section2 = document.querySelector(".internals-result");
   const internalScore = document.getElementById("internals-value");
 
   //initialization
@@ -49,13 +49,12 @@ submit.addEventListener("click", function () {
   internalScore.classList.remove("hidden");
   document.querySelector(".internal-heading").textContent = "Internals Score";
 
-  if (
-    cat1 === 0 &&
-    cat2 === 0 &&
-    attendence === 0 &&
-    assignment1 === 0 &&
-    assignment2 === 0
-  ) {
+  //Mobile Responsiveness
+  if (screen.width < 800) {
+    document.querySelector(".add-card").style.marginTop = "35%";
+  }
+
+  if (cat1 === 0 && cat2 === 0 && assignment1 === 0 && assignment2 === 0) {
     section2.classList.remove("hidden");
     document.querySelector(".internal-heading").textContent =
       "Enter your Marks!";
