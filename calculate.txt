@@ -30,4 +30,4 @@ else if( 90<=attendance)
   attendanceMark=10
 }
   
- Internals= (cat1 /4)+(cat2 /4)+attendanceMark+((assignmnet1+assignmnet2)/3.3333)
+ Internals= (cat1 /4)+(cat2 /4)+attendanceMark+((assignmnet1+assignmnet2)/6.666)
