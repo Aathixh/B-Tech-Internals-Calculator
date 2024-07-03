@@ -330,7 +330,17 @@ section {
 @media (max-width: 800px) {
   .modal {
     width: 60%;
+    height: 60%;
     padding: 3rem;
+  }
+  #model-heading {
+    font-size: 2rem !important;
+  }
+  #model-content {
+    font-size: 1.9rem !important;
+  }
+  #model-last {
+    font-size: 1.9rem !important;
   }
 
   section {
@@ -396,20 +406,20 @@ section {
   .modal {
     width: 80%;
     padding: 0;
-    height: 70%;
+    height: 65%;
     font-size: 100%;
     text-align: center;
   }
   #model-heading {
-    padding: 0.5rem;
-    font-size: 1.5rem;
+    padding: 0.5rem !important;
+    font-size: 1.5rem !important;
   }
   #model-last {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   #model-content {
-    padding: 0.6rem;
-    font-size: 1.3rem;
+    padding: 0.6rem !important;
+    font-size: 1.5rem !important;
   }
 
   .close-modal {
