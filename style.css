@@ -335,7 +335,7 @@ section {
     width: fit-content;
   }
   section .form {
-    transform: scale(0.9) !important;
+    transform: scale(1);
   }
   h1 {
     font-size: 250%;
@@ -357,6 +357,7 @@ section {
   .add-card {
     display: flex;
     flex-direction: column;
+    margin-top: 10vh;
     /* align-items: center; */
   }
   .slide-in,
@@ -430,7 +431,7 @@ section {
     transform: scale(0.8) !important;
   }
   h1 {
-    font-size: 230%;
+    font-size: 240%;
     margin: 0;
   }
   .show-modal {
@@ -450,6 +451,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 80vh;
+    margin-top: 5vh;
     /* align-items: center; */
   }
   .slide-in,
