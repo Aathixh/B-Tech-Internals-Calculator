@@ -21,7 +21,7 @@ body {
   height: 400px;
   border-radius: 9999px;
   position: relative;
-  animation: one 7s infinite;
+  animation: one 5s infinite;
 }
 
 .bg-shape2 {
@@ -29,52 +29,38 @@ body {
   height: 400px;
   border-radius: 9999px;
   position: relative;
-  animation: two 7s infinite;
+  animation: two 5s infinite;
 }
 
 @keyframes one {
-  0% {
-    left: 0px;
-    top: 0px;
+  0%,
+  100% {
+    transform: translate(0, 5vh) scale(1) rotate(0deg); /* Adjusted to start a bit lower */
   }
   25% {
-    left: -100px;
-    top: 70px;
+    transform: translate(-2vw, -3vh) scale(0.8) rotate(-20deg); /* Adjusted vertical movement */
   }
   50% {
-    left: 20px;
-    top: 150px;
+    transform: translate(4vw, 8vh) scale(1.1) rotate(20deg); /* Adjusted to move further down */
   }
   75% {
-    left: 100px;
-    top: 100px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
+    transform: translate(7vw, 7vh) scale(1.2) rotate(-10deg); /* Adjusted vertical movement */
   }
 }
 
 @keyframes two {
-  0% {
-    left: 0px;
-    top: 0px;
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
   }
   25% {
-    left: -100px;
-    top: 50px;
+    transform: translate(-3vw, 0vh) scale(0.7) rotate(15deg);
   }
   50% {
-    left: 150px;
-    top: 100px;
+    transform: translate(3vw, 3vh) scale(0.5) rotate(-15deg);
   }
   75% {
-    left: 10px;
-    top: 50px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
+    transform: translate(2vw, -2vh) scale(0.7) rotate(10deg);
   }
 }
 
@@ -307,7 +293,7 @@ section {
   width: 70%;
   background-color: rgb(233, 207, 177);
   padding: 6rem;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   background-position: center;
@@ -407,4 +393,82 @@ section {
   color: #834f0b;
   font-size: 200%;
   font-weight: 700;
+}
+
+@media (max-width: 425px) {
+  .modal {
+    width: 80%;
+    padding: 0;
+    height: 70%;
+    font-size: 100%;
+    text-align: center;
+  }
+  #model-heading {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  #model-last {
+    font-size: 1.5rem;
+  }
+  #model-content {
+    padding: 0.6rem;
+    font-size: 1.3rem;
+  }
+  #model-welcome {
+    font-size: 1.5rem;
+  }
+  .close-modal {
+    top: 0.5rem;
+    right: 1rem;
+  }
+
+  section {
+    width: fit-content;
+    height: fit-content;
+  }
+  section .form {
+    transform: scale(0.8) !important;
+  }
+  h1 {
+    font-size: 230%;
+    margin: 0;
+  }
+  .show-modal {
+    left: 1.5%;
+    top: 1.5%;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+  }
+
+  .absolute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-card {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    /* align-items: center; */
+  }
+  .slide-in,
+  .slide-out {
+    animation: none !important; /* Overrides any animation */
+    transform: none !important; /* Resets any transform applied by the animation */
+  }
+
+  .internals-result {
+    margin-top: 0;
+    z-index: 0;
+    margin-bottom: 5%;
+    font-size: 50%;
+  }
+
+  .internals-result p {
+    margin: 0;
+  }
+  body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
 }

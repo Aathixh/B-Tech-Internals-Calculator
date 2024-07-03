@@ -115,4 +115,11 @@ submit.addEventListener("click", function () {
       console.log("Button clicked");
     }
   }
+  setTimeout(() => {
+    const resultSection = document.querySelector(".internals-result");
+    if (resultSection) {
+      // Scrolls the result section into view after a short delay
+      resultSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 100);
 });
