@@ -395,7 +395,7 @@ section {
   font-weight: 700;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .modal {
     width: 80%;
     padding: 0;
@@ -430,7 +430,7 @@ section {
     transform: scale(0.8) !important;
   }
   h1 {
-    font-size: 230%;
+    font-size: 240%;
     margin: 0;
   }
   .show-modal {
