@@ -6,7 +6,7 @@ body {
 
 .absolute {
   position: absolute;
-  top: 50px !important;
+  top: 5vh !important;
   inset: 0;
   justify-content: center;
   display: inline-flex;
@@ -335,6 +335,7 @@ section {
     width: 60%;
     padding: 3rem;
   }
+
   section {
     width: fit-content;
   }
@@ -361,7 +362,7 @@ section {
   .add-card {
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 4vh;
     /* align-items: center; */
   }
   .slide-in,
