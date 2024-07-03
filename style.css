@@ -1,6 +1,7 @@
 body {
   justify-content: center;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .absolute {
@@ -86,12 +87,12 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 0px;
   color: #c77e4ee0;
   font-size: 350%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bolder;
+  margin-top: 0;
 }
 
 section {
@@ -325,6 +326,9 @@ section {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: #834e12;
+}
+.add-card {
+  margin-top: 3vh;
 }
 @media (max-width: 800px) {
   .modal {
