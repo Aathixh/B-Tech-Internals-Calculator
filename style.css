@@ -400,7 +400,7 @@ section {
   font-weight: 700;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   .modal {
     width: 80%;
     padding: 0;
